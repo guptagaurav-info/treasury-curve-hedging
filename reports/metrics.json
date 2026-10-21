@@ -1,0 +1,389 @@
+{
+  "data": {
+    "source": "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/f9120ae6774148dfee69efb536dc1be94f1f7298/data/US/daily_treasury_yield.parquet",
+    "sha256": "13004d0befd8fa0c7cf7f2674b5129cdba875e33d3e3101aa15d25a931810ef0",
+    "revision": "f9120ae6774148dfee69efb536dc1be94f1f7298",
+    "downloaded": "2026-10-21",
+    "first_date": "1990-01-02",
+    "last_date": "2026-10-20",
+    "n_curve_days": 9207,
+    "n_test_days": 6691,
+    "test_start": "1994-01-03",
+    "test_end": "2026-10-20",
+    "thirty_year_gap_days": 994,
+    "thirty_year_gap": [
+      "2002-02-19",
+      "2006-02-08"
+    ],
+    "latest_curve_pct": {
+      "0.25y": 4.26,
+      "2y": 4.79,
+      "5y": 4.94,
+      "10y": 5.12,
+      "30y": 5.42
+    },
+    "book_dv01_usd_latest": 1474136.8329079307
+  },
+  "summary": {
+    "unhedged": {
+      "ann_vol_usd": 150358972.48219502,
+      "var99_1d_usd": 23327610.326465998,
+      "es975_1d_usd": 24853440.585445423,
+      "worst_day_usd": 72031326.26249832,
+      "worst_10d_usd": 135151649.73407128,
+      "variance_reduction": 0.0,
+      "vr_lookahead": 0.0,
+      "gross_hedge_dv01_x_book": 0.0,
+      "ann_cost_usd_illustrative": 0.0
+    },
+    "dv01_10y": {
+      "ann_vol_usd": 60412639.448562644,
+      "var99_1d_usd": 10534109.119930016,
+      "es975_1d_usd": 11091140.26914686,
+      "worst_day_usd": 45211246.22167927,
+      "worst_10d_usd": 68567602.77074936,
+      "variance_reduction": 0.8385652881,
+      "vr_lookahead": 0.8385652881,
+      "gross_hedge_dv01_x_book": 1.0,
+      "ann_cost_usd_illustrative": 10164.9230398471
+    },
+    "beta_10y": {
+      "ann_vol_usd": 56866094.489041805,
+      "var99_1d_usd": 9502219.918665435,
+      "es975_1d_usd": 10211684.843969155,
+      "worst_day_usd": 32571366.793370403,
+      "worst_10d_usd": 53782813.003673114,
+      "variance_reduction": 0.8569630944,
+      "vr_lookahead": 0.8552333064,
+      "gross_hedge_dv01_x_book": 0.8688436564,
+      "ann_cost_usd_illustrative": 29800.8926148761
+    },
+    "pca2": {
+      "ann_vol_usd": 57605122.624023765,
+      "var99_1d_usd": 9537422.439423459,
+      "es975_1d_usd": 10305746.076660784,
+      "worst_day_usd": 48285817.68459833,
+      "worst_10d_usd": 75856637.7248562,
+      "variance_reduction": 0.8532211393,
+      "vr_lookahead": 0.8702200676,
+      "gross_hedge_dv01_x_book": 1.7715501711,
+      "ann_cost_usd_illustrative": 120955.4632992523
+    },
+    "pca3": {
+      "ann_vol_usd": 82634791.55964375,
+      "var99_1d_usd": 13717404.375406453,
+      "es975_1d_usd": 15287772.19938968,
+      "worst_day_usd": 59885602.077560894,
+      "worst_10d_usd": 94756571.22745593,
+      "variance_reduction": 0.6979581139,
+      "vr_lookahead": 0.7906469443,
+      "gross_hedge_dv01_x_book": 4.5200166728,
+      "ann_cost_usd_illustrative": 808922.3476357998
+    },
+    "minvar": {
+      "ann_vol_usd": 49268199.426027305,
+      "var99_1d_usd": 8326829.152670534,
+      "es975_1d_usd": 8927352.7614387,
+      "worst_day_usd": 39977513.957179144,
+      "worst_10d_usd": 65592076.33876914,
+      "variance_reduction": 0.8926320446,
+      "vr_lookahead": 0.8904933705,
+      "gross_hedge_dv01_x_book": 1.656552144,
+      "ann_cost_usd_illustrative": 166414.5557198487
+    }
+  },
+  "first_half": {
+    "unhedged": {
+      "ann_vol_usd": 135968345.53985918,
+      "var99_1d_usd": 23266890.973657485,
+      "es975_1d_usd": 23793214.237934098,
+      "worst_day_usd": 37866720.68939882,
+      "worst_10d_usd": 135151649.73407128,
+      "variance_reduction": 0.0
+    },
+    "dv01_10y": {
+      "ann_vol_usd": 61165749.180089585,
+      "var99_1d_usd": 10553883.963764375,
+      "es975_1d_usd": 11566290.749251066,
+      "worst_day_usd": 45211246.22167927,
+      "worst_10d_usd": 68567602.77074936,
+      "variance_reduction": 0.7976324039
+    },
+    "beta_10y": {
+      "ann_vol_usd": 52546127.668337196,
+      "var99_1d_usd": 9279854.512418227,
+      "es975_1d_usd": 9988422.53032736,
+      "worst_day_usd": 29007871.656337336,
+      "worst_10d_usd": 53782813.003673114,
+      "variance_reduction": 0.8506498005
+    },
+    "pca2": {
+      "ann_vol_usd": 54900636.440540895,
+      "var99_1d_usd": 9193018.589734443,
+      "es975_1d_usd": 10626261.912398787,
+      "worst_day_usd": 48285817.68459833,
+      "worst_10d_usd": 75856637.7248562,
+      "variance_reduction": 0.8369656441
+    },
+    "pca3": {
+      "ann_vol_usd": 106009093.30240916,
+      "var99_1d_usd": 18377582.101711668,
+      "es975_1d_usd": 20202316.704000957,
+      "worst_day_usd": 59885602.077560894,
+      "worst_10d_usd": 94756571.22745593,
+      "variance_reduction": 0.3921301351
+    },
+    "minvar": {
+      "ann_vol_usd": 50646830.54897388,
+      "var99_1d_usd": 8774778.147260403,
+      "es975_1d_usd": 9723056.169779308,
+      "worst_day_usd": 39977513.957179144,
+      "worst_10d_usd": 65592076.33876914,
+      "variance_reduction": 0.8612513012
+    }
+  },
+  "second_half": {
+    "unhedged": {
+      "ann_vol_usd": 158286833.08036956,
+      "var99_1d_usd": 23326742.67686087,
+      "es975_1d_usd": 25355509.091849282,
+      "worst_day_usd": 72031326.26249832,
+      "worst_10d_usd": 106470356.78497866,
+      "variance_reduction": 0.0
+    },
+    "dv01_10y": {
+      "ann_vol_usd": 59967586.704899944,
+      "var99_1d_usd": 10496252.877760641,
+      "es975_1d_usd": 10774363.399346126,
+      "worst_day_usd": 31014067.931535233,
+      "worst_10d_usd": 58506003.68493305,
+      "variance_reduction": 0.8564697097
+    },
+    "beta_10y": {
+      "ann_vol_usd": 59283521.95451603,
+      "var99_1d_usd": 9698994.679806253,
+      "es975_1d_usd": 10269679.778398907,
+      "worst_day_usd": 32571366.793370403,
+      "worst_10d_usd": 48299326.92796016,
+      "variance_reduction": 0.8597256022
+    },
+    "pca2": {
+      "ann_vol_usd": 59147796.5517903,
+      "var99_1d_usd": 9536023.935115099,
+      "es975_1d_usd": 10034146.924579926,
+      "worst_day_usd": 26402445.345494587,
+      "worst_10d_usd": 53942097.64674593,
+      "variance_reduction": 0.8603671634
+    },
+    "pca3": {
+      "ann_vol_usd": 64937904.36863532,
+      "var99_1d_usd": 11509383.969213238,
+      "es975_1d_usd": 11541993.839940447,
+      "worst_day_usd": 26020403.488567375,
+      "worst_10d_usd": 61058433.729989916,
+      "variance_reduction": 0.8316911477
+    },
+    "minvar": {
+      "ann_vol_usd": 48437619.418075845,
+      "var99_1d_usd": 7952498.50528507,
+      "es975_1d_usd": 8419590.462172568,
+      "worst_day_usd": 26503560.91285071,
+      "worst_10d_usd": 47770112.00711228,
+      "variance_reduction": 0.9063568528
+    }
+  },
+  "bootstrap_vol_ratio_ci95": {
+    "beta_10y_vs_dv01_10y": [
+      0.9152467607546486,
+      0.9686000613191479
+    ],
+    "pca2_vs_dv01_10y": [
+      0.9265140678690224,
+      0.9822472712993262
+    ],
+    "pca3_vs_dv01_10y": [
+      1.2510214211725028,
+      1.5075179680833746
+    ],
+    "minvar_vs_dv01_10y": [
+      0.7887455264928149,
+      0.8413454560314911
+    ]
+  },
+  "residual_of_dv01_hedge": {
+    "r2_on_10s30s_change": 0.9706078062045954,
+    "usd_per_bp_10s30s": -1701158.6491315672,
+    "corr_with_10y_level_change": 0.35194386348409773
+  },
+  "yield_beta_30_on_10": {
+    "full": 0.8515863344066512,
+    "min_year": 0.6601711115924104,
+    "max_year": 1.1153464996480271,
+    "min_year_at": 1992,
+    "max_year_at": 2020
+  },
+  "turnover_weight_change_per_month": {
+    "beta_10y": 0.0049778777,
+    "dv01_10y": 0.0,
+    "minvar": 0.0357220771,
+    "pca2": 0.0241456005,
+    "pca3": 0.1966098448,
+    "unhedged": 0.0
+  },
+  "business_illustrative": {
+    "unhedged": {
+      "capital_usd": 221305143.00148985,
+      "annual_capital_cost_usd": 22130514.300148986
+    },
+    "dv01_10y": {
+      "capital_usd": 99935333.81919204,
+      "annual_capital_cost_usd": 9993533.381919203
+    },
+    "beta_10y": {
+      "capital_usd": 90145973.3124081,
+      "annual_capital_cost_usd": 9014597.33124081
+    },
+    "pca2": {
+      "capital_usd": 90479933.74733223,
+      "annual_capital_cost_usd": 9047993.374733223
+    },
+    "pca3": {
+      "capital_usd": 130134724.23553142,
+      "annual_capital_cost_usd": 13013472.423553143
+    },
+    "minvar": {
+      "capital_usd": 78995237.42858648,
+      "annual_capital_cost_usd": 7899523.742858648
+    }
+  },
+  "latest_weights": {
+    "unhedged": {
+      "w2": 0.0,
+      "w5": 0.0,
+      "w10": 0.0
+    },
+    "dv01_10y": {
+      "w2": 0.0,
+      "w5": 0.0,
+      "w10": -1.0
+    },
+    "beta_10y": {
+      "w2": 0.0,
+      "w5": 0.0,
+      "w10": -0.8837138192
+    },
+    "pca2": {
+      "w2": 0.4276494812,
+      "w5": 0.0,
+      "w10": -1.2677626008
+    },
+    "pca3": {
+      "w2": -0.1381265371,
+      "w5": 1.1169760119,
+      "w10": -1.9333739141
+    },
+    "minvar": {
+      "w2": 0.1194077427,
+      "w5": 0.4582535955,
+      "w10": -1.4602047618
+    }
+  },
+  "latest_weights_date": "2026-10-01",
+  "stress": [
+    {
+      "window": "Sep-Dec 2008 (Lehman)",
+      "days": 80,
+      "unhedged_cum_pnl_usd": 335483210.64354295,
+      "unhedged_worst_day_usd": 36516069.73220789,
+      "unhedged_vol_usd": 274486254.60571647,
+      "dv01_10y_cum_pnl_usd": 34872781.15869284,
+      "dv01_10y_worst_day_usd": 16152575.027461972,
+      "dv01_10y_vol_usd": 120550207.10070288,
+      "beta_10y_cum_pnl_usd": 95519631.72972637,
+      "beta_10y_worst_day_usd": 16277276.419201279,
+      "beta_10y_vol_usd": 104777812.3066334,
+      "minvar_cum_pnl_usd": 84434119.64388523,
+      "minvar_worst_day_usd": 15029382.836911853,
+      "minvar_vol_usd": 104606442.46496348,
+      "pca3_cum_pnl_usd": 11130574.596188143,
+      "pca3_worst_day_usd": 35903781.089490056,
+      "pca3_vol_usd": 165263567.33497325
+    },
+    {
+      "window": "Mar 2020 (dash for cash)",
+      "days": 22,
+      "unhedged_cum_pnl_usd": 83287403.77817301,
+      "unhedged_worst_day_usd": 72031326.26249832,
+      "unhedged_vol_usd": 647206254.514159,
+      "dv01_10y_cum_pnl_usd": -17583105.809826154,
+      "dv01_10y_worst_day_usd": 31014067.931535233,
+      "dv01_10y_vol_usd": 219060100.94172335,
+      "beta_10y_cum_pnl_usd": -6960317.450481826,
+      "beta_10y_worst_day_usd": 32571366.793370403,
+      "beta_10y_vol_usd": 247162400.59555027,
+      "minvar_cum_pnl_usd": 5551698.662409233,
+      "minvar_worst_day_usd": 26503560.91285071,
+      "minvar_vol_usd": 196547388.5713981,
+      "pca3_cum_pnl_usd": -21966.5022155512,
+      "pca3_worst_day_usd": 17796186.374810517,
+      "pca3_vol_usd": 189840945.90235642
+    },
+    {
+      "window": "2022 (hiking cycle)",
+      "days": 249,
+      "unhedged_cum_pnl_usd": -388874497.26495427,
+      "unhedged_worst_day_usd": 40916156.84489429,
+      "unhedged_vol_usd": 203335076.29905736,
+      "dv01_10y_cum_pnl_usd": 68384739.54525004,
+      "dv01_10y_worst_day_usd": 20110370.5856875,
+      "dv01_10y_vol_usd": 94828633.88052475,
+      "beta_10y_cum_pnl_usd": 53612448.31647918,
+      "beta_10y_worst_day_usd": 19669173.423275694,
+      "beta_10y_vol_usd": 90844073.54494089,
+      "minvar_cum_pnl_usd": -12619631.541480862,
+      "minvar_worst_day_usd": 13893917.128429819,
+      "minvar_vol_usd": 64640425.374322794,
+      "pca3_cum_pnl_usd": 61692324.986479476,
+      "pca3_worst_day_usd": 14098810.302522931,
+      "pca3_vol_usd": 75747489.13546966
+    },
+    {
+      "window": "Mar 2023 (SVB)",
+      "days": 23,
+      "unhedged_cum_pnl_usd": 46614370.73136113,
+      "unhedged_worst_day_usd": 23326742.676860873,
+      "unhedged_vol_usd": 202374867.0974744,
+      "dv01_10y_cum_pnl_usd": -30692391.139820606,
+      "dv01_10y_worst_day_usd": 27093898.06895602,
+      "dv01_10y_vol_usd": 141081287.74988788,
+      "beta_10y_cum_pnl_usd": -22651191.796727937,
+      "beta_10y_worst_day_usd": 24287162.351086598,
+      "beta_10y_vol_usd": 120132779.29133071,
+      "minvar_cum_pnl_usd": -2759569.942048571,
+      "minvar_worst_day_usd": 7243260.884384967,
+      "minvar_vol_usd": 53230219.21704967,
+      "pca3_cum_pnl_usd": -13240764.595486099,
+      "pca3_worst_day_usd": 22722208.3688232,
+      "pca3_vol_usd": 103473137.36604846
+    },
+    {
+      "window": "Last 12 months",
+      "days": 250,
+      "unhedged_cum_pnl_usd": -115813489.62501673,
+      "unhedged_worst_day_usd": 20153149.725766744,
+      "unhedged_vol_usd": 91577393.44590409,
+      "dv01_10y_cum_pnl_usd": 45280556.36350696,
+      "dv01_10y_worst_day_usd": 7472241.429737162,
+      "dv01_10y_vol_usd": 40933804.669892356,
+      "beta_10y_cum_pnl_usd": 24440227.324797537,
+      "beta_10y_worst_day_usd": 8603630.68533546,
+      "beta_10y_vol_usd": 36433708.94759039,
+      "minvar_cum_pnl_usd": 1696924.4817867745,
+      "minvar_worst_day_usd": 6603952.212726935,
+      "minvar_vol_usd": 27912429.68309407,
+      "pca3_cum_pnl_usd": -3213514.2877626177,
+      "pca3_worst_day_usd": 7423081.584184559,
+      "pca3_vol_usd": 32811492.97168959
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# Treasury curve hedging: all choices fixed before results were examined.
+raw_dir: data/raw
+out_dir: reports
+seed: 7
+
+source:
+  file: daily_treasury_yield.parquet
+  # US Treasury Daily Par Yield Curve Rates (home.treasury.gov), mirrored on Hugging Face.
+  url: https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/f9120ae6774148dfee69efb536dc1be94f1f7298/data/US/daily_treasury_yield.parquet
+  dataset: defeatbeta/yahoo-finance-data
+  revision: f9120ae6774148dfee69efb536dc1be94f1f7298
+  licence: odc-by
+  sha256: 13004d0befd8fa0c7cf7f2674b5129cdba875e33d3e3101aa15d25a931810ef0
+  downloaded: "2026-10-21"
+  primary: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve
+
+book:
+  tenor: 30            # the exposure being hedged: a long 30-year Treasury position
+  market_value_usd: 1000000000   # illustrative $1bn book
+hedge_tenors: [2, 5, 10]   # liquid hedge instruments (on-the-run / futures-equivalent points)
+pca_tenors: [2, 5, 10, 30] # curve points used to estimate level / slope / curvature factors
+financing_tenor: 0.25      # 3-month bill: every leg is financed, so P&L is excess of bills
+
+walk_forward:
+  train_days: 756          # trailing 3 years of daily changes (business days with data)
+  min_train_days: 500
+  max_train_years: 4       # never train on a window that reaches back more than 4 calendar years
+  refit: monthly           # hedge ratios set on the first trading day of each month, from data before it
+  test_start: "1994-01-01"
+  split_date: "2010-01-01" # first vs second half of the test
+
+costs:                     # ILLUSTRATIVE, used only for net-of-cost comparisons
+  bp_of_dv01_traded: 0.25  # cost per $ of DV01 rebalanced, in bp of yield (roughly a futures tick on 10s)
+  stress_bp: 1.0
+
+economics:                 # ILLUSTRATIVE assumptions for the business-outcome table only
+  capital_multiplier: 3.0  # Basel-style 3 x 10-day 99% VaR
+  cost_of_capital: 0.10    # hurdle rate on risk capital
+
+stress_windows:
+  "Sep-Dec 2008 (Lehman)": ["2008-09-01", "2008-12-31"]
+  "Mar 2020 (dash for cash)": ["2020-03-01", "2020-03-31"]
+  "2022 (hiking cycle)": ["2022-01-01", "2022-12-31"]
+  "Mar 2023 (SVB)": ["2023-03-01", "2023-03-31"]
+  "Last 12 months": ["2025-10-21", "2026-10-20"]
